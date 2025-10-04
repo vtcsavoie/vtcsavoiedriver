@@ -1,0 +1,143 @@
+:root{
+  --bg-dark:#1A1A1A;
+  --bg-gray:#F0F0F0;
+  --bg-white:#FFFFFF;
+  --text:#111;
+  --text-inv:#fff;
+  --gold:#D4AF37;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg-gray)}
+.container{width:min(1100px,92%);margin:auto}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:var(--bg-dark);border-bottom:1px solid #222}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand-mark{font-family:"Playfair Display",serif;color:var(--gold);font-weight:700;letter-spacing:.5px;text-decoration:none}
+.menu a{color:var(--gold);text-decoration:none;margin-left:22px;font-weight:600}
+#langToggle{margin-left:18px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:6px 10px;border-radius:10px;cursor:pointer}
+#burger{display:none;background:transparent;border:none;color:var(--gold);font-size:26px}
+
+/* Section HERO */
+.hero {
+  position: relative;
+  min-height: 100vh; /* plein écran */
+  background: url('assets/hero.jpg') top/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  /* plus de clarté sur la photo */
+  filter: brightness(1.25) contrast(1.1);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.hero a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--gold);
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+
+
+/* Sections */
+.section{padding:60px 0}
+.section h2{font-family:"Playfair Display",serif;font-size:34px;margin:0 0 24px;color:var(--bg-dark)}
+.section-gray{background:var(--bg-gray)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--bg-white);border-radius:18px;padding:22px;box-shadow:0 8px 28px rgba(0,0,0,.06)}
+.card-icon{font-size:28px}
+.card h3{margin:12px 0 6px}
+.card p{margin:0;color:var(--muted)}
+
+/* Pricing */
+.pricing{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin:10px 0 20px}
+.price-card{background:var(--bg-white);border-radius:18px;padding:22px;box-shadow:0 10px 28px rgba(0,0,0,.06);text-align:center}
+.price-card .price{font-size:28px;font-weight:800;color:var(--bg-dark)}
+.center{text-align:center}
+.note{color:var(--muted)}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:start}
+form{background:var(--bg-white);border-radius:18px;padding:22px;box-shadow:0 10px 28px rgba(0,0,0,.06)}
+label{display:block;margin:8px 0 6px;font-weight:600}
+input,textarea{width:100%;padding:12px 14px;border:1px solid #ddd;border-radius:12px;font:inherit}
+form .button{margin-top:12px}
+
+/* Footer */
+.site-footer{background:var(--bg-dark);color:var(--text-inv);padding:18px 0;text-align:center;font-size:14px}
+
+/* Bouton WhatsApp officiel flottant */
+.whatsapp-float {
+  position: fixed;
+  width: 65px;   /* taille desktop */
+  height: 65px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* Vert officiel WhatsApp */
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); /* zoom au survol */
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Version mobile (plus petit) */
+@media (max-width: 600px) {
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-float img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .pricing{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  #burger{display:block}
+  .menu{display:none;position:absolute;right:0;top:66px;background:var(--bg-dark);padding:14px 18px;border-radius:0 0 0 12px}
+  .menu a,#langToggle{display:block;margin:8px 0}
+}
+@media (max-width: 520px){
+  .pricing{grid-template-columns:1fr}
+  .hero-brand{font-size:36px}
+  .tagline{font-size:20px}
+}
