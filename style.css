@@ -29,7 +29,7 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: #FFD700;
 
   /* plus de clarté sur la photo */
   filter: brightness(1.25) contrast(1.1);
