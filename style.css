@@ -141,3 +141,23 @@ form .button{margin-top:12px}
   .hero-brand{font-size:36px}
   .tagline{font-size:20px}
 }
+/* ===== Footer links : blanc + hover or / violet / bleu nuit ===== */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    background: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    background: linear-gradient(
+        90deg,
+        #d4af37, /* or */
+        #8b5cf6, /* violet */
+        #0f172a  /* bleu nuit */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: underline;
+}
