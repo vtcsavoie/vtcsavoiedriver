@@ -152,12 +152,13 @@ footer a {
 footer a:hover {
     background: linear-gradient(
         90deg,
-        #d4af37, /* or */
-        #8b5cf6, /* violet */
-        #0f172a  /* bleu nuit */
+        #f5c542, /* or clair */
+        #d8b4fe, /* violet TRÈS clair et lisible */
+        #1e40af  /* bleu nuit éclairci */
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: underline;
 }
+
