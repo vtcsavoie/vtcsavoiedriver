@@ -104,16 +104,14 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 
 /* Titres */
 .hero h1 {
-  font-size: 3rem;
-  margin: 0;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  font-size: 3.2rem;          /* plus impact */
+  font-weight: 700;           /* pro / sérieux */
+  letter-spacing: 0.3px;     /* plus moderne */
+  line-height: 1.15;
+  margin: 0 0 12px 0;
+  color: #FFD700;             /* on garde ton jaune */
+ text-shadow: 0 3px 12px rgba(0,0,0,0.85);/* ombre plus propre */
 }
-
-/* Boutons */
-.hero .cta {
-  margin-top: 20px;
-}
-
 
 /* Boutons */
 .hero .cta {
