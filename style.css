@@ -18,6 +18,49 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 .menu a{color:var(--gold);text-decoration:none;margin-left:22px;font-weight:600}
 #langToggle{margin-left:18px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:6px 10px;border-radius:10px;cursor:pointer}
 #burger{display:none;background:transparent;border:none;color:var(--gold);font-size:26px}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #FFD700;
+  overflow: hidden;
+}
+
+/* Dégradé fondu vers la section suivante */
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 220px; /* IMPORTANT : masque toute jonction */
+  background: linear-gradient(
+    to bottom,
+    rgba(11,15,20,0),
+    rgba(11,15,20,1)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Contenu au-dessus du dégradé */
+.hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* Titres */
 /* ===== HERO ===== */
 .hero {
   position: relative;
@@ -65,6 +108,12 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
   margin: 0;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
+
+/* Boutons */
+.hero .cta {
+  margin-top: 20px;
+}
+
 
 /* Boutons */
 .hero .cta {
