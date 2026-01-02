@@ -19,10 +19,11 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 #langToggle{margin-left:18px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:6px 10px;border-radius:10px;cursor:pointer}
 #burger{display:none;background:transparent;border:none;color:var(--gold);font-size:26px}
 
-/* ===== HERO ===== */
+/* =========================
+   SECTION HERO
+========================= */
 
 .hero {
-  position: relative;
   background-image: url("hero.jpg");
   background-size: cover;
   background-position: center;
@@ -34,9 +35,22 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
   justify-content: center;
   text-align: center;
 
-  color: #FFD700;
-  overflow: hidden;
+  color: #FFD700; /* Jaune doré */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* contraste sur photo */
 }
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
 
 
 /* Dégradé fondu vers la section suivante */
