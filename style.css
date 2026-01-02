@@ -233,19 +233,4 @@ footer a:hover {
   </div>
 </section>
 
-/* MENU TOUJOURS EN HAUT */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #111;
-}
-
-/* DÉCALE LE SITE POUR NE PAS PASSER SOUS LE MENU */
-body {
-  padding-top: 80px;
-}
-
 
