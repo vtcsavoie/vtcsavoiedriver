@@ -38,40 +38,23 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 #langToggle{margin-left:18px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:6px 10px;border-radius:10px;cursor:pointer}
 #burger{display:none;background:transparent;border:none;color:var(--gold);font-size:26px}
 
-/* =========================
-   HERO PREMIUM
-   ========================= */
+/* ===== HERO ===== */
 
 .hero {
-  background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)
-  ),
-  url("hero.jpg") center / cover no-repeat;
+  position: relative;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 8%;
   text-align: center;
-  color: var(--white);
-}
 
-.hero-content {
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.15rem;
-  color: #eaeaea;
-  margin-bottom: 2rem;
+  color: #FFD700;
+  overflow: hidden;
 }
 
 
