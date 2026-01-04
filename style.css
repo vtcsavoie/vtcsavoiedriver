@@ -220,3 +220,18 @@ footer a:hover {
     background-clip: text;
     text-decoration: underline;
 }
+/* ===== Branding header (nom entreprise) ===== */
+
+.brand-mark {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #d4af37; /* or */
+  text-transform: uppercase;
+}
+
+.brand-mark span {
+  font-weight: 300;
+  color: #ffffff;
+}
+
