@@ -24,7 +24,31 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
     align-items: center;
 }
 
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height: 100%;
+}
+.brand{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.brand-link{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo{
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
 .brand-mark{font-family:"Playfair Display",serif;color:var(--gold);font-weight:700;letter-spacing:.5px;text-decoration:none}
 /* Logo + texte côte à côte */
 .brand-link{
