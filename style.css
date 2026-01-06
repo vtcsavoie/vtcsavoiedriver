@@ -331,7 +331,10 @@ footer a:hover {
   margin: 0 auto;
   padding: 40px;
 }
-
+.devis-hero{
+  background: url("photo-devis.jpg") center/cover no-repeat !important;
+  min-height: 60vh !important;
+}
 
 
 
