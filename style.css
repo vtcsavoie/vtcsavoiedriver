@@ -336,5 +336,15 @@ footer a:hover {
   min-height: 60vh !important;
 }
 
+/* Fond image sur le bloc "Demande de devis" (page accueil) */
+.devis-home-bg{
+  background-image:
+    linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)),
+    url("devis-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 
