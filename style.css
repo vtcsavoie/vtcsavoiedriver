@@ -64,16 +64,15 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 #langToggle{margin-left:18px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:6px 10px;border-radius:10px;cursor:pointer}
 #burger{display:none;background:transparent;border:none;color:var(--gold);font-size:26px}
 
-/* ===== HERO ===== */
 .hero {
   position: relative;
 
   background-image: url("hero.jpg");
   background-size: cover;
-  background-position: top center; /* FIX : garde le haut visible */
+  background-position: top center;
   background-repeat: no-repeat;
 
-  min-height: 85vh; /* plus souple que height */
+  min-height: 85vh; /* mobile / tablette */
 
   display: flex;
   align-items: center;
@@ -83,6 +82,13 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
   color: #FFD700;
   overflow: hidden;
 }
+
+/* Desktop : hero un peu plus haut pour garder le même cadrage que mobile */
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+    background-position: 50% 10%;
+  }
 
 /* Dégradé fondu vers la section suivante */
 .hero::after {
