@@ -83,13 +83,6 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
   overflow: hidden;
 }
 
-/* Desktop : hero un peu plus haut pour garder le même cadrage que mobile */
-@media (min-width: 1024px) {
-  .hero {
-    min-height: 100vh;
-    background-position: 50% 10%;
-  }
-
 /* Dégradé fondu vers la section suivante */
 .hero::after {
   content: "";
