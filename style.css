@@ -67,11 +67,13 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 /* ===== HERO ===== */
 .hero {
   position: relative;
+
   background-image: url('hero.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top center; /* FIX : garde le haut visible */
   background-repeat: no-repeat;
-  height: 100vh;
+
+  min-height: 100vh; /* plus souple que height */
 
   display: flex;
   align-items: center;
