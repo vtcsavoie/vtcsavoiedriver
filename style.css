@@ -286,6 +286,34 @@ footer a:hover {
   display: block;
 }
 .brand-link { text-decoration: none; }
+/* ===== HERO PAGE DEVIS ===== */
+.devis-hero {
+  position: relative;
+  background-image: url('Photo-Devis.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFD700;
+}
+
+.devis-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.devis-hero h1,
+.devis-hero p {
+  position: relative;
+  z-index: 2;
+}
 
 
 
