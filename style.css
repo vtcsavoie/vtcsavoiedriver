@@ -339,7 +339,7 @@ footer a:hover {
 /* Fond image sur le bloc "Demande de devis" (page accueil) */
 .devis-home-bg{
   background-image:
-    linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)),
+    linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.50)),
     url("devis-bg.jpg");
   background-size: cover;
   background-position: center;
