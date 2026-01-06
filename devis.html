@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demande de devis VTC | VTC Savoie Driver</title>
+  <meta name="description" content="Demande de devis VTC : aéroports, gares, stations de ski, longue distance. Réponse rapide par email/WhatsApp." />
+  <link rel="canonical" href="https://vtcsavoiedriver.fr/devis.html" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    .card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+    label{font-weight:700;display:block;margin:10px 0 6px}
+    input, select, textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #ddd}
+    textarea{min-height:110px}
+    .title{margin:0 0 6px}
+    .sub{color:#555;margin:0 0 16px}
+    .sectionTitle{margin:18px 0 8px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 14px;border-radius:12px;text-decoration:none;border:1px solid #111;font-weight:800}
+    .btnPrimary{background:#111;color:#fff}
+    .note{color:#666;font-size:13px;margin-top:10px}
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title">Demande de devis</h1>
+    <p class="sub">
+      Nos tarifs sont établis selon l’itinéraire, l’horaire, le nombre de passagers, les bagages et le type de véhicule.
+      Réponse rapide (WhatsApp / email).
+    </p>
+
+    <div class="card">
+      <!-- FORMULAIRE (FormSubmit) -->
+      <!-- IMPORTANT : remplace vtcsavoiedriver@gmail.com par TON email si besoin -->
+      <form action="https://formsubmit.co/vtcsavoiedriver@gmail.com" method="POST">
+        <!-- Options utiles -->
+        <input type="hidden" name="_subject" value="Nouvelle demande de devis - vtcsavoiedriver.fr" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <h2 class="sectionTitle">Coordonnées</h2>
+        <div class="grid">
+          <div>
+            <label>Prénom *</label>
+            <input name="prenom" required />
+          </div>
+          <div>
+            <label>Nom *</label>
+            <input name="nom" required />
+          </div>
+          <div>
+            <label>Email *</label>
+            <input type="email" name="email" required />
+          </div>
+          <div>
+            <label>Téléphone *</label>
+            <input name="telephone" required placeholder="+33..." />
+          </div>
+        </div>
+
+        <h2 class="sectionTitle">Votre trajet</h2>
+        <div class="grid">
+          <div>
+            <label>Type de trajet *</label>
+            <select name="type_trajet" required>
+              <option value="">— Choisir —</option>
+              <option>Aller simple</option>
+              <option>Aller-retour</option>
+              <option>Mise à disposition (à l’heure)</option>
+            </select>
+          </div>
+          <div>
+            <label>Type de véhicule *</label>
+            <select name="vehicule" required>
+              <option value="">— Choisir —</option>
+              <option>Berline</option>
+              <option>Van / Minivan</option>
+              <option>Van luxe</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Lieu de prise en charge *</label>
+            <input name="pickup" required placeholder="Adresse, hôtel, aéroport, gare..." />
+          </div>
+          <div>
+            <label>Lieu de destination *</label>
+            <input name="dropoff" required placeholder="Adresse, hôtel, station..." />
+          </div>
+
+          <div>
+            <label>Date *</label>
+            <input type="date" name="date" required />
+          </div>
+          <div>
+            <label>Heure *</label>
+            <input type="time" name="heure" required />
+          </div>
+
+          <div>
+            <label>N° de vol (si aéroport)</label>
+            <input name="vol" placeholder="Ex: LX2807" />
+          </div>
+          <div>
+            <label>Heure d’arrivée du vol (si pertinent)</label>
+            <input type="time" name="heure_vol" />
+          </div>
+        </div>
+
+        <h2 class="sectionTitle">Passagers & bagages</h2>
+        <div class="grid">
+          <div>
+            <label>Nombre de passagers *</label>
+            <input type="number" name="passagers" min="1" required />
+          </div>
+          <div>
+            <label>Nombre de valises *</label>
+            <input type="number" name="valises" min="0" required />
+          </div>
+          <div>
+            <label>Skis / snowboards ?</label>
+            <select name="skis">
+              <option>Non</option>
+              <option>Oui</option>
+            </select>
+          </div>
+          <div>
+            <label>Siège enfant / bébé ?</label>
+            <select name="siege_enfant">
+              <option>Non</option>
+              <option>Oui</option>
+            </select>
+          </div>
+        </div>
+
+        <h2 class="sectionTitle">Informations complémentaires</h2>
+        <div class="grid">
+          <div>
+            <label>Moyen de paiement souhaité</label>
+            <select name="paiement">
+              <option>Carte bancaire</option>
+              <option>Virement</option>
+              <option>Espèces</option>
+            </select>
+          </div>
+          <div>
+            <label>Urgence</label>
+            <select name="urgence">
+              <option>Réponse normale</option>
+              <option>Réponse rapide (dans la journée)</option>
+            </select>
+          </div>
+        </div>
+
+        <label>Commentaire / demande particulière</label>
+        <textarea name="message" placeholder="Ex: 6 passagers + 6 valises, arrivée tardive, besoin attente, etc."></textarea>
+
+        <div class="actions">
+          <button class="btn btnPrimary" type="submit">Envoyer la demande</button>
+          <a class="btn" href="https://wa.me/33610493409" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+
+        <p class="note">
+          En soumettant ce formulaire, vous acceptez d’être recontacté pour traiter votre demande.
+        </p>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
