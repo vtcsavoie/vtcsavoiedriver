@@ -420,5 +420,29 @@ footer a:hover {
     font-size: 16px;
   }
 }
+/* === SUPPRIMER LA JONCTION BLANCHE ENTRE HERO ET SECTION SUIVANTE === */
 
+/* La section juste après le hero */
+.hero + section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Sécurité si section grise */
+.section,
+.section-gray {
+  margin-top: 0;
+}
+
+/* Le hero descend légèrement sur la section suivante */
+.hero {
+  margin-bottom: -120px; /* ajuste si besoin (-100 / -140) */
+}
+
+/* Mobile : moins agressif */
+@media (max-width: 600px) {
+  .hero {
+    margin-bottom: -80px;
+  }
+}
 
