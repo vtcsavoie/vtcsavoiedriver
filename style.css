@@ -445,4 +445,21 @@ footer a:hover {
     margin-bottom: -80px;
   }
 }
+/* === COLLER LES 2 IMAGES (supprime la jonction blanche) === */
+.hero{
+  display: flow-root;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.hero + section{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Si le blanc vient des textes/CTA (marges par défaut) */
+.hero .tagline,
+.hero .cta{
+  margin-bottom: 0 !important;
+}
 
