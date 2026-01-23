@@ -363,6 +363,62 @@ footer a:hover {
   background: #0b5cff;
   color: #fff !important;
 }
+/* CTA WhatsApp (bouton hero) */
+.cta-box{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 
+  width: min(520px, 92vw);
+  max-width: 92vw;
+
+  padding: 14px 18px;
+  border: 2px solid rgba(11,92,255,.85);
+  border-radius: 12px;
+
+  background: rgba(255,255,255,.18);
+  backdrop-filter: blur(6px);
+
+  text-decoration: none !important;
+  line-height: 1.15;
+}
+
+.cta-box .cta-title{
+  display:block;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+
+.cta-box .cta-phone{
+  display:block;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+/* Hover: transparent (pas bleu plein) */
+.cta-box:hover{
+  background: rgba(255,255,255,.26);
+}
+
+/* Mobile: texte plus petit + largeur safe */
+@media (max-width: 480px){
+  .cta-box{
+    width: 92vw;
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+  .cta-box .cta-title{
+    font-size: 16px;
+    text-align:center;
+  }
+  .cta-box .cta-phone{
+    font-size: 16px;
+  }
+}
 
 
