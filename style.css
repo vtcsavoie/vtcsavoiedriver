@@ -83,23 +83,6 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
   overflow: hidden;
 }
 
-/* Dégradé fondu vers la section suivante */
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 220px; /* IMPORTANT : masque toute jonction */
-  background: linear-gradient(
-    to bottom,
-    rgba(11,15,20,0),
-    rgba(11,15,20,1)
-  );
-  z-index: 1;
-  pointer-events: none;
-}
-
 /* Contenu au-dessus du dégradé */
 .hero-inner {
   position: relative;
@@ -123,23 +106,6 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 
   color: #FFD700;
   overflow: hidden;
-}
-
-/* Dégradé fondu vers la section suivante */
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 220px; /* IMPORTANT : masque toute jonction */
-  background: linear-gradient(
-    to bottom,
-    rgba(11,15,20,0),
-    rgba(11,15,20,1)
-  );
-  z-index: 1;
-  pointer-events: none;
 }
 
 /* Contenu au-dessus du dégradé */
