@@ -462,4 +462,14 @@ footer a:hover {
 .hero .cta{
   margin-bottom: 0 !important;
 }
+/* Réduction hauteur du bandeau noir (header) */
+header {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Réduction légère du logo si besoin */
+header img {
+  max-height: 45px;
+}
 
