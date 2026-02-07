@@ -476,13 +476,8 @@ header {
 }
   /* ===== RÉDUCTION DU HEADER (DESKTOP) ===== */
 header {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   height: auto;
-}
-
-/* Logo moins haut pour éviter que le header déborde */
-header img {
-  max-height: 38px;
 }
 
