@@ -461,3 +461,17 @@ header img {
   color: #FFD700;
   overflow: hidden;
 }
+  
+/* === FIX HEADER TROP HAUT (DESKTOP) === */
+header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: auto;
+}
+  
+  /* Le hero commence sous le header */
+.hero {
+  margin-top: 0;
+  padding-top: 0;
+}
+
