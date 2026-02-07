@@ -488,8 +488,5 @@ header img {
   .hero,
   .hero::before,
   .hero .gradient {
-    background-position: top center !important;
-  }
-}
 
 
