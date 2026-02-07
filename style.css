@@ -483,4 +483,22 @@ header img {
     background-position: center center !important;
   }
 }
+/* Desktop : montrer le haut de l'image du hero */
+@media (min-width: 769px) {
+  .hero,
+  .hero::before,
+  .hero .gradient {
+    background-position: top center !important;
+  }
+}
+
+/* Mobile : garder centré */
+@media (max-width: 768px) {
+  .hero,
+  .hero::before,
+  .hero .gradient {
+    background-position: center center !important;
+  }
+}
+
 
