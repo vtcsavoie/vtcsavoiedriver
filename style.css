@@ -492,13 +492,4 @@ header img {
   }
 }
 
-/* Mobile : garder centré */
-@media (max-width: 768px) {
-  .hero,
-  .hero::before,
-  .hero .gradient {
-    background-position: center center !important;
-  }
-}
-
 
