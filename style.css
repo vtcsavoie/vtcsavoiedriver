@@ -444,6 +444,20 @@ header img {
   .hero {
     background-position: center center !important;
   }
+
+.hero {
+  position: relative;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #FFD700;
+  overflow: hidden;
 }
-
-
