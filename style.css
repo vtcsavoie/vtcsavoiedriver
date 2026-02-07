@@ -492,11 +492,3 @@ header {
   height: auto;
   display: block;
 }
-
-/* Contenu par-dessus l'image */
-.hero-inner{
-  position: absolute;
-  inset: 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
