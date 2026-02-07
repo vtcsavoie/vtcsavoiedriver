@@ -483,10 +483,5 @@ header img {
     background-position: center center !important;
   }
 }
-/* Desktop : montrer le haut de l'image du hero */
-@media (min-width: 769px) {
-  .hero,
-  .hero::before,
-  .hero .gradient {
 
 
