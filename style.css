@@ -464,8 +464,8 @@ footer a:hover {
 }
 /* Réduction hauteur du bandeau noir (header) */
 header {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
 }
 
 /* Réduction légère du logo si besoin */
