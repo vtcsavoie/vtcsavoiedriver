@@ -504,10 +504,3 @@ header {
   text-align: center;
   z-index: 2;
 }
-
-/* gradient optionnel */
-.gradient{
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
