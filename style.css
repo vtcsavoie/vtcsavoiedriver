@@ -472,4 +472,15 @@ header {
 header img {
   max-height: 45px;
 }
+/* HERO : montrer le haut de l'image sur desktop */
+.hero {
+  background-position: top center !important;
+}
+
+/* Mobile : on garde un rendu équilibré */
+@media (max-width: 768px) {
+  .hero {
+    background-position: center center !important;
+  }
+}
 
