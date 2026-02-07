@@ -23,7 +23,7 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
     background: var(--bg-dark);
     border-bottom: 1px solid #222;
 
-    height: 60px;              /* +0,5 cm environ */
+    height: 40px;              /* +0,5 cm environ */
     display: flex;
     align-items: stretch; /* 🔥 IMPORTANT */
 }
