@@ -481,3 +481,33 @@ header {
   height: auto;
 }
 
+/* HERO IMAGE COMPLETE - PAS DE RECADRAGE */
+.hero{
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenu par-dessus l'image */
+.hero-inner{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+/* gradient optionnel */
+.gradient{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
