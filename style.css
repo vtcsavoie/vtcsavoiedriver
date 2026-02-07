@@ -476,8 +476,8 @@ header {
 }
   /* ===== RÉDUCTION DU HEADER (DESKTOP) ===== */
 header {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 6px;
+  padding-bottom: 2px;
   height: auto;
 }
 
