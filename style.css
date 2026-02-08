@@ -44,7 +44,7 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 }
 
 .logo{
-  height: 150%;
+  height: 200%;
   width: auto;
   display: block;
 }
@@ -268,7 +268,7 @@ footer a:hover {
 /* HERO DEVIS – IMAGE DE FOND */
 .devis-hero{
   min-height: 60vh;
-  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/photo-devis.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/photo-devis.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
