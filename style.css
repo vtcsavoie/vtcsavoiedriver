@@ -17,11 +17,13 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 
 /* Header */
 .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: var(--bg-dark);
-    border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-dark);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
     height: 90px;              /* +0,5 cm environ */
     display: flex;
