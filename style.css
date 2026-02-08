@@ -44,7 +44,7 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
 }
 
 .logo{
-  height: 180%;
+  height: 100%;
   width: auto;
   display: block;
 }
@@ -232,7 +232,7 @@ footer a:hover {
 }
 /* Logo header */
 .logo {
-  height: 82px;
+  height: 42px;
   width: auto;
   display: block;
 }
@@ -268,7 +268,8 @@ footer a:hover {
 /* HERO DEVIS – IMAGE DE FOND */
 .devis-hero{
   min-height: 60vh;
-  background-image: linear-gradient(rgba(0,0,0,0.32), rgba(0,0,0,0.32)), url("/photo-devis.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/photo-devis.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url("/photo-devis.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -282,11 +283,15 @@ footer a:hover {
   margin: 0 auto;
   padding: 40px;
 }
+.devis-hero{
+  background: url("photo-devis.jpg") center/cover no-repeat !important;
+  min-height: 60vh !important;
+}
 
 /* Fond image sur le bloc "Demande de devis" (page accueil) */
 .devis-home-bg{
   background-image:
-    linear-gradient(rgba(255,255,255,0.10), rgba(255,255,255,0.10)),
+    linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.50)),
     url("devis-bg.jpg");
   background-size: cover;
   background-position: center;
