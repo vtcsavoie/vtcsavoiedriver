@@ -83,13 +83,6 @@ body{margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,A
   overflow: hidden;
 }
 
-/* Desktop : hero un peu plus haut pour garder le même cadrage que mobile */
-@media (min-width: 1024px) {
-  .hero {
-    min-height: 100vh;
-    background-position: 50% 10%;
-  }
-
 /* Dégradé fondu vers la section suivante */
 .hero::after {
   content: "";
@@ -353,4 +346,140 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   padding: 200px 0;
+}
+.cta-box {
+  background: rgba(255,255,255,0.95);
+  border: 2px solid #0b5cff;
+  color: #0b5cff !important;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 26px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.cta-box:hover {
+  background: #0b5cff;
+  color: #fff !important;
+}
+/* CTA WhatsApp (bouton hero) */
+.cta-box{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: min(520px, 92vw);
+  max-width: 92vw;
+
+  padding: 14px 18px;
+  border: 2px solid rgba(11,92,255,.85);
+  border-radius: 12px;
+
+  background: rgba(255,255,255,.18);
+  backdrop-filter: blur(6px);
+
+  text-decoration: none !important;
+  line-height: 1.15;
+}
+
+.cta-box .cta-title{
+  display:block;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+
+.cta-box .cta-phone{
+  display:block;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+/* Hover: transparent (pas bleu plein) */
+.cta-box:hover{
+  background: rgba(255,255,255,.26);
+}
+
+/* Mobile: texte plus petit + largeur safe */
+@media (max-width: 480px){
+  .cta-box{
+    width: 92vw;
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+  .cta-box .cta-title{
+    font-size: 16px;
+    text-align:center;
+  }
+  .cta-box .cta-phone{
+    font-size: 16px;
+  }
+}
+/* === SUPPRIMER LA JONCTION BLANCHE ENTRE HERO ET SECTION SUIVANTE === */
+
+/* La section juste après le hero */
+.hero + section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Sécurité si section grise */
+.section,
+.section-gray {
+  margin-top: 0;
+}
+
+/* Le hero descend légèrement sur la section suivante */
+.hero {
+  margin-bottom: -120px; /* ajuste si besoin (-100 / -140) */
+}
+
+/* Mobile : moins agressif */
+@media (max-width: 600px) {
+  .hero {
+    margin-bottom: -80px;
+  }
+}
+/* === COLLER LES 2 IMAGES (supprime la jonction blanche) === */
+.hero{
+  display: flow-root;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.hero + section{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Si le blanc vient des textes/CTA (marges par défaut) */
+.hero .tagline,
+.hero .cta{
+  margin-bottom: 0 !important;
+}
+/* Réduction hauteur du bandeau noir (header) */
+header {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+/* Réduction légère du logo si besoin */
+header img {
+  max-height: 45px;
+}
+/* HERO : montrer le haut de l'image sur desktop */
+.hero {
+  background-position: top center !important;
+}
+
+/* Mobile : on garde un rendu équilibré */
+@media (max-width: 768px) {
+  .hero {
+    background-position: center center !important;
+  }
 }
