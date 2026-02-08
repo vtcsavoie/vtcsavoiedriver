@@ -268,7 +268,7 @@ footer a:hover {
 /* HERO DEVIS – IMAGE DE FOND */
 .devis-hero{
   min-height: 60vh;
-  background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url("/photo-devis.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url("/photo-devis.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
