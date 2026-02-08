@@ -462,24 +462,3 @@ footer a:hover {
 .hero .cta{
   margin-bottom: 0 !important;
 }
-/* Réduction hauteur du bandeau noir (header) */
-header {
-  padding-top: 6px !important;
-  padding-bottom: 6px !important;
-}
-
-/* Réduction légère du logo si besoin */
-header img {
-  max-height: 45px;
-}
-/* HERO : montrer le haut de l'image sur desktop */
-.hero {
-  background-position: top center !important;
-}
-
-/* Mobile : on garde un rendu équilibré */
-@media (max-width: 768px) {
-  .hero {
-    background-position: center center !important;
-  }
-}
