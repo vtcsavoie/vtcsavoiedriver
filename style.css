@@ -413,3 +413,22 @@ footer a:hover {
 .hero .cta{
   margin-bottom: 0 !important;
 }
+
+/* HERO CONTACT */
+.contact-hero{
+  position: relative;
+  min-height: 55vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("contact-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-hero-content{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  color: #fff;
+}
