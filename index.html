@@ -160,7 +160,7 @@
       padding:7.5rem 3.5rem 5rem;
       display:grid;grid-template-columns:1fr 400px;gap:4rem;align-items:center;
     }
-    .hero-left{animation:fadeUp 1s ease both}
+    .hero-left{opacity:1}
     .hero-eyebrow{
       display:inline-flex;align-items:center;gap:.7rem;
       font-size:.67rem;letter-spacing:.26em;text-transform:uppercase;
@@ -197,7 +197,7 @@
     .trust-text{font-size:.78rem;color:var(--muted)}
 
     /* Carte info hero */
-    .hero-right{animation:fadeUp 1s .25s ease both}
+    .hero-right{opacity:1}
     .info-card{
       background:rgba(15,35,80,.5);
       backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);
@@ -828,7 +828,7 @@
       <p class="galerie-sub">Savoie, stations, lacs — cliquez pour agrandir.</p>
     </div>
     <div class="gallery-grid" id="gallery">
-      <div class="g-item reveal" onclick="openLb(0)"><img src="images/33298.jpg" alt="Route alpine arc-en-ciel irisé"/><div class="g-overlay"><div class="g-icon">⊕</div></div></div>
+      <div class="g-item reveal" onclick="openLb(0)"><img src="../33298.jpg" alt="Route alpine arc-en-ciel irisé"/><div class="g-overlay"><div class="g-icon">⊕</div></div></div>
       <div class="g-item reveal" onclick="openLb(1)"><img src="images/33309.jpg" alt="Mercedes V nuit neige Noël"/><div class="g-overlay"><div class="g-icon">⊕</div></div></div>
       <div class="g-item reveal" onclick="openLb(2)"><img src="images/33293.jpg" alt="Flotte Mercedes Palace Annecy"/><div class="g-overlay"><div class="g-icon">⊕</div></div></div>
       <div class="g-item reveal" onclick="openLb(3)"><img src="images/33308.jpg" alt="Genève Aéroport nuit"/><div class="g-overlay"><div class="g-icon">⊕</div></div></div>
@@ -913,7 +913,7 @@
   function closeMob(){document.getElementById('mob').classList.remove('open');document.body.style.overflow=''}
   const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target)}});},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-  const imgs=['images/33298.jpg','images/33309.jpg','images/33293.jpg','images/33308.jpg','images/33295.jpg','images/33284.jpg'];
+  const imgs=['../33298.jpg','images/33309.jpg','images/33293.jpg','images/33308.jpg','images/33295.jpg','images/33284.jpg'];
   let idx=0;
   function openLb(i){idx=i;document.getElementById('lbImg').src=imgs[i];document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'}
   function closeLb(e){if(!e||e.target===document.getElementById('lightbox')||e.target.classList.contains('lb-close')){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}}
