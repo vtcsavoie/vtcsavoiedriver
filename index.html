@@ -197,7 +197,7 @@
     .trust-text{font-size:.78rem;color:var(--muted)}
  
     /* Collage photos hero */
-    .hero-right{opacity:1;display:flex;flex-direction:column;gap:10px;height:580px;width:100%}
+    .hero-right{opacity:1;display:flex;flex-direction:column;gap:10px;height:420px;width:100%;margin-top:-2rem}
     .hero-photo{flex:1;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.15)}
     .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
     .hero-photo:hover img{transform:scale(1.04)}
@@ -868,5 +868,6 @@
   document.addEventListener('keydown',e=>{if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')navLb(-1);if(e.key==='ArrowRight')navLb(1)});
   function showNotif(){const n=document.getElementById('notif');n.style.display='block';setTimeout(()=>n.style.display='none',4000)}
   function sendWa(){const n=document.getElementById('rn').value.trim(),t=document.getElementById('rt').value.trim();if(!n||!t){alert('Merci de renseigner votre nom et téléphone.');return}window.open('https://wa.me/33610493409?text='+encodeURIComponent('Bonjour VTC Savoie Driver, je so
+ 
  
  
