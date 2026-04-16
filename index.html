@@ -156,7 +156,7 @@
  
     .hero-content{
       position:relative;z-index:3;
-      width:100%;margin:0;
+      max-width:1240px;margin:0 auto;
       padding:7.5rem 3.5rem 5rem;
       display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
     }
@@ -197,8 +197,9 @@
     .trust-text{font-size:.78rem;color:var(--muted)}
  
     /* Collage photos hero */
-    .hero-right{opacity:1;display:flex;flex-direction:column;gap:10px;height:calc(100% + 5rem);width:calc(50% + 3.5rem);position:absolute;right:0;top:0;margin-top:0}
+    .hero-right{opacity:1;display:flex;flex-direction:column;gap:10px;height:420px;width:100%;margin-top:-2rem}
     .hero-photo{flex:1;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.15)}
+    .hero-photo-ski{margin-top:4.5rem;flex:0 0 45%}
     .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
     .hero-photo:hover img{transform:scale(1.04)}
     .hero-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,40,100,.25) 0%,transparent 60%);pointer-events:none}
@@ -611,7 +612,7 @@
       </div>
     </div>
     <div class="hero-right">
-      <div class="hero-photo">
+      <div class="hero-photo hero-photo-ski">
         <img src="station-ski.jpg" alt="Station de ski Savoie — VTC Savoie Driver"/>
       </div>
       <div class="hero-photo">
